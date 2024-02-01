@@ -1,0 +1,138 @@
+/* Importação Fonts (GoogleFonts) */
+  @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@800&family=Teko:wght@600&display=swap');
+
+
+/* Estilos gerais (Todo projeto) */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+    background-color: #1f1517;
+    color: #ffff;   
+}
+
+html {
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+
+}
+
+a {
+    text-decoration: none; /* Remove decoração do texto*/
+}
+
+ul {
+    /* Remove os marcadores (bolinha)*/
+    list-style-type: none;
+}
+
+/* _______________________________________________________________ */
+/* Cabeçãho/Header (Barra de navegação) */
+
+nav{
+    max-width: 1120px;
+    margin: auto; /*Centraliza o elemento horizontalmete*/
+    padding: 1.5rem 10rem;/* 1*5 maior que a fonte raiz = 16px (1.5 e o topo e a base/10 os lados)*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;/*Espaçamente igual entre os elementos ao longo do eixo principal*/
+
+}
+
+.title {
+   font-family: 'Teko', sans-serif;
+   font-size: 32px;
+   font-weight: 600;
+   text-transform: uppercase; /*Transforma o texto para letras maiusculas*/
+}
+
+/* Estilos do Hamburguer (Responsividade) */
+.menu-toogle {
+    display: none;
+    cursor: pointer;
+}
+
+/* Imagem do Hamburguer */
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 24px; /*Define o espaçamento enrte os elementos filhos*/
+    color: #fff2e780;
+    margin-top: 9px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.menu a:hover {
+    color: #ffff;
+}
+
+.menu a:visited {
+    color: #fff2e780; /*Define a cor dos links*/
+}
+
+.github {
+    color: #fff2e7;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.github:hover {
+    color: #a45a49;/*Nova cor do texto quando passa por cima*/
+}
+
+/* _______________________________________________________________ */
+/* Responsividade (Telas menores que 768px) */
+
+@media screen and (max-width: 768px) {
+
+    /*Header*/
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        z-index: 9;
+    }
+
+    nav ul li {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .menu {
+        margin-left: 0px;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        margin-right: -70px;
+    }
+
+    .github {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    
+    .title {
+        margin-left: -100px;
+    }
+}
