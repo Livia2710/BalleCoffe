@@ -419,3 +419,18 @@ footer {
     font-size: 1rem;
     font-weight: 500;
 }
+
+/* _____________________________________________________________________________ */
+/* Responsividade */
+
+@media screen and (max-width: 768px) {
+
+    /* Receitas */
+
+    article {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+}
