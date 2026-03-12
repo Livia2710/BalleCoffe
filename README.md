@@ -4,7 +4,12 @@ Site desenvolvido focado em layout, responsividade e pequenas interações para 
 O projeto simula a página de uma cafeteria, explorando identidade visual e estrutura de uma site simple.
 
 ## Preview
-Acesse os site: https://livia2710.github.io/BalleCoffe/
+
+<p align="center">
+  <img src="./assets/preview.png" alt="Preview do site" width="700"/>
+</p>
+
+Acesse o site: https://livia2710.github.io/BalleCoffe/
 
 ## Tecnologias Utilizadas
 - HTML5
